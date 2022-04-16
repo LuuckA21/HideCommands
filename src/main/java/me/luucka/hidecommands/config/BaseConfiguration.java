@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 public final class BaseConfiguration {
 
-    private static final Logger LOGGER = Logger.getLogger("SuggestionCommands");
+    private static final Logger LOGGER = Logger.getLogger("HideCommands");
 
     private final Class<?> resourceClass = BaseConfiguration.class;
     private final File configFile;
