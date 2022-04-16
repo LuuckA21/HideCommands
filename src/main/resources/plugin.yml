@@ -1,0 +1,15 @@
+name: HideCommands
+version: '${project.version}'
+main: me.luucka.hidecommands.HideCommands
+api-version: 1.18
+authors: [ LuuckA ]
+description: Hide commands
+libraries:
+  - org.spongepowered:configurate-yaml:${libs.configurate-yaml}
+commands:
+  hidecommands:
+    description: Reload plugin
+permissions:
+  hidecommands.admin:
+    default: op
+    description: All permissions
