@@ -4,7 +4,7 @@ default:
   - cmd2
   - cmd3
 
-# suggestioncmds.group.<group>
+# hidecommands.group.<group>
 groups:
   vip:
     commands:
