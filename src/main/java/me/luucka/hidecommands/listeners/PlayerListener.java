@@ -36,17 +36,17 @@ public class PlayerListener implements Listener {
         }
     }
 
-    @EventHandler
+    /*@EventHandler
     public void onTab(AsyncTabCompleteEvent event) {
         if (!(event.getSender() instanceof Player)) return;
 
         String buffer = event.getBuffer();
         PLUGIN.getLogger().severe(buffer.substring(1, buffer.indexOf(" ")));
 
-//        List<String> compl = event.getCompletions();
-//        compl.clear();
-//        compl.add("ciao");
-//        event.setCompletions(compl);
-    }
+        List<String> compl = event.getCompletions();
+        compl.clear();
+        compl.add("ciao");
+        event.setCompletions(compl);
+    }*/
 
 }
