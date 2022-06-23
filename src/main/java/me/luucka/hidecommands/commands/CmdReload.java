@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 @RequiredArgsConstructor
 public class CmdReload implements CommandExecutor {
@@ -15,7 +16,7 @@ public class CmdReload implements CommandExecutor {
     private final HideCommands PLUGIN;
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
         if (!sender.hasPermission(Perms.ADMIN)) {
             sender.sendMessage(MiniMessage.miniMessage().deserialize("<red>You do not have permission!"));
             return true;

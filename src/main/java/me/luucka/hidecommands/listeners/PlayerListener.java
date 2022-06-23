@@ -1,6 +1,5 @@
 package me.luucka.hidecommands.listeners;
 
-import com.destroystokyo.paper.event.server.AsyncTabCompleteEvent;
 import lombok.RequiredArgsConstructor;
 import me.luucka.hidecommands.HideCommands;
 import me.luucka.hidecommands.Perms;
@@ -35,18 +34,5 @@ public class PlayerListener implements Listener {
             }
         }
     }
-
-    /*@EventHandler
-    public void onTab(AsyncTabCompleteEvent event) {
-        if (!(event.getSender() instanceof Player)) return;
-
-        String buffer = event.getBuffer();
-        PLUGIN.getLogger().severe(buffer.substring(1, buffer.indexOf(" ")));
-
-        List<String> compl = event.getCompletions();
-        compl.clear();
-        compl.add("ciao");
-        event.setCompletions(compl);
-    }*/
 
 }

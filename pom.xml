@@ -6,7 +6,7 @@
 
     <groupId>me.luucka</groupId>
     <artifactId>HideCommands</artifactId>
-    <version>Build-4</version>
+    <version>Build-5</version>
     <packaging>jar</packaging>
 
     <name>HideCommands</name>
@@ -74,12 +74,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.github.waterfallmc</groupId>
-            <artifactId>waterfall-api</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.spongepowered</groupId>
             <artifactId>configurate-yaml</artifactId>
             <version>${libs.configurate-yaml}</version>
@@ -88,7 +82,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
