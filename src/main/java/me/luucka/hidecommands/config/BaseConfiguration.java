@@ -47,6 +47,12 @@ public final class BaseConfiguration {
         return keys;
     }
 
+    public String getString(final String path, final String def) {
+        final CommentedConfigurationNode node = getInternal(path);
+        if (node == null) return def;
+        return node.getString();
+    }
+
     public <T> List<T> getList(final String path, Class<T> type) {
         final CommentedConfigurationNode node = getInternal(path);
         if (node == null) {
@@ -111,7 +117,8 @@ public final class BaseConfiguration {
             }
             LOGGER.log(Level.SEVERE, "The file " + configFile + " is broken. A backup file has failed to be created", e.getCause());
         } catch (final ConfigurateException e) {
-            LOGGER.log(Level.SEVERE, e.getMessage(), e);;
+            LOGGER.log(Level.SEVERE, e.getMessage(), e);
+            ;
         } finally {
             if (configurationNode == null) {
                 configurationNode = loader.createNode();

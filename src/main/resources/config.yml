@@ -1,3 +1,8 @@
+# Messages
+prefix: "<gray>[<#4287f5>HideCommands<gray>]"
+no-permission: "{PREFIX} <red>You do not have permission!"
+reload: "{PREFIX} <green>Plugin reloaded!"
+
 # Commands section
 default:
   - cmd1

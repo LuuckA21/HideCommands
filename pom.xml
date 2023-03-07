@@ -6,7 +6,7 @@
 
     <groupId>me.luucka</groupId>
     <artifactId>HideCommands</artifactId>
-    <version>Build-5</version>
+    <version>Build-6</version>
     <packaging>jar</packaging>
 
     <name>HideCommands</name>
@@ -17,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <libs.configurate-yaml>4.1.2</libs.configurate-yaml>
+        <libs.lombok>1.18.26</libs.lombok>
     </properties>
 
     <build>
@@ -57,8 +58,8 @@
 
     <repositories>
         <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>sonatype</id>
@@ -70,7 +71,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18.2-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -82,7 +83,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>${libs.lombok}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
