@@ -6,7 +6,7 @@
 
     <groupId>me.luucka</groupId>
     <artifactId>HideCommands</artifactId>
-    <version>Build-6</version>
+    <version>Build-7</version>
     <packaging>jar</packaging>
 
     <name>HideCommands</name>
@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <libs.configurate-yaml>4.1.2</libs.configurate-yaml>
-        <libs.lombok>1.18.26</libs.lombok>
+        <libs.lombok>1.18.28</libs.lombok>
     </properties>
 
     <build>
@@ -25,7 +25,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -34,7 +34,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -71,7 +71,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.19.3-R0.1-SNAPSHOT</version>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

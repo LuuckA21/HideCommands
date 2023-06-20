@@ -1,7 +1,7 @@
 name: HideCommands
 version: '${project.version}'
 main: me.luucka.hidecommands.HideCommandsPlugin
-api-version: 1.19
+api-version: '1.20'
 authors: [ LuuckA ]
 description: Hide commands
 libraries:
